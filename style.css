@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F8F5FB;
+    color: #555;
+}
+
+/* ===========================
+   PORTADA
+=========================== */
+
+.hero {
+    min-height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(255,255,255,.65), rgba(239,228,246,.80)),
+        url("imagenes/mi_foto.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido {
+    width: 90%;
+    max-width: 700px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    color: #8E6BBE;
+}
+
+.hero h2{
+    margin-top:10px;
+    font-size:30px;
+    color:#444;
+    font-weight:300;
+}
+
+.subtitulo{
+    max-width:600px;
+    margin:25px auto;
+    font-size:20px;
+    line-height:1.8;
+    color:#666;
+}
+
+.adorno{
+    font-size:40px;
+    color:#B38CD9;
+    margin:25px 0;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #666;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 50px;
+    background: #9D7CC0;
+    color: white;
+    text-decoration: none;
+    padding: 18px 45px;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.boton:hover {
+    background: #7E57C2;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   HISTORIA
+=========================== */
+
+#historia {
+    padding: 120px 40px;
+    background: white;
+}
+
+.historia {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.historia h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 52px;
+    color: #8E6BBE;
+    margin-bottom: 40px;
+}
+
+.historia p {
+    font-size: 22px;
+    line-height: 2;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* ===========================
+   CONTADOR
+=========================== */
+
+#contador {
+    background: #F7F2FA;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#contador h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 52px;
+    color: #8E6BBE;
+    margin-bottom: 45px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tiempo {
+    background: white;
+    width: 140px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.tiempo span {
+    display: block;
+    font-size: 52px;
+    font-weight: bold;
+    color: #8E6BBE;
+}
+
+.tiempo small {
+    font-size: 18px;
+    color: #666;
+}
+
+/* ===========================
+   CEREMONIA
+=========================== */
+
+#ceremonia {
+    padding: 100px 20px;
+    background: white;
+}
+
+.tarjeta {
+    max-width: 700px;
+    margin: auto;
+    background: #F8F5FB;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.tarjeta h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #8E6BBE;
+    margin-bottom: 25px;
+}
+
+.tarjeta h3 {
+    margin-top: 30px;
+    color: #444;
+    font-size: 28px;
+}
+
+.tarjeta p {
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+.mapa {
+    display: inline-block;
+    margin-top: 35px;
+    background: #9D7CC0;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 35px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.mapa:hover {
+    background: #7E57C2;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   MENSAJE
+=========================== */
+
+#mensaje {
+    padding: 120px 20px;
+    background: #F8F5FB;
+}
+
+.mensaje {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.frase {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #8E6BBE;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.mensaje p {
+    font-size: 22px;
+    line-height: 1.9;
+}
+/*============================
+MENU
+============================*/
+
+.menu{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.90);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    padding:18px;
+
+    z-index:999;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+}
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#8E6BBE;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#7E57C2;
+
+}
+.separador{
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:#B38CD9;
+
+    margin:70px 0;
+
+}
+/* ===========================
+   VESTIMENTA
+=========================== */
+
+#vestimenta{
+    padding:100px 20px;
+    background:#F8F5FB;
+    text-align:center;
+}
+
+#vestimenta h2{
+    font-family:'Great Vibes', cursive;
+    font-size:52px;
+    color:#8E6BBE;
+    margin-bottom:50px;
+}
+
+.vestimenta-contenedor{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.vestimenta-card{
+    width:280px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.vestimenta-card{
+
+    transition:.4s;
+
+}
+
+.vestimenta-card:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.icono{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.vestimenta-card h3{
+    color:#8E6BBE;
+    margin-bottom:10px;
+}
+
+.vestimenta-card p{
+    font-size:20px;
+    color:#555;
+}
+
+.nota{
+    margin-top:45px;
+    font-size:20px;
+    color:#666;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.8;
+}
+/* ===========================
+   REGALOS
+=========================== */
+
+#regalos{
+    padding:100px 20px;
+    background:white;
+    text-align:center;
+}
+
+#regalos h2{
+    font-family:'Great Vibes', cursive;
+    font-size:52px;
+    color:#8E6BBE;
+    margin-bottom:45px;
+}
+
+.tarjeta-regalo{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:#F8F5FB;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.icono-regalo{
+
+    font-size:60px;
+
+    margin-bottom:25px;
+
+}
+
+.tarjeta-regalo p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+    color:#555;
+
+}
+
+.gracias{
+
+    color:#8E6BBE;
+
+    font-weight:600;
+
+}
+/* ===========================
+   CONFIRMACIÓN
+=========================== */
+
+#confirmacion{
+
+    padding:100px 20px;
+
+    background:#F8F5FB;
+
+    text-align:center;
+
+}
+
+#confirmacion h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:52px;
+
+    color:#8E6BBE;
+
+    margin-bottom:45px;
+
+}
+
+.confirmacion-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.confirmacion-card p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:25px;
+
+}
+
+.boton-whatsapp{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.boton-whatsapp:hover{
+
+    transform:scale(1.05);
+
+    background:#1EBE5D;
+
+}
+/* ===========================
+   MENSAJE FINAL
+=========================== */
+
+#final{
+
+    padding:120px 20px;
+
+    background:white;
+
+    text-align:center;
+
+}
+
+#final h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:56px;
+
+    color:#8E6BBE;
+
+    margin-bottom:35px;
+
+}
+
+.mensaje-final{
+
+    font-size:32px;
+
+    font-style:italic;
+
+    color:#666;
+
+    margin-bottom:15px;
+
+}
+
+.versiculo{
+
+    color:#8E6BBE;
+
+    font-weight:bold;
+
+    margin-bottom:35px;
+
+}
+
+.agradecimiento{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.firma{
+
+    margin-top:50px;
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:48px;
+
+    color:#8E6BBE;
+
+}
