@@ -586,3 +586,33 @@ MENU
     color:#8E6BBE;
 
 }
+/* ========================= */
+/* SECCIÓN NUESTRA CANCIÓN   */
+/* ========================= */
+
+.cancion{
+    max-width:700px;
+    margin:80px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.cancion h2{
+    font-family:'Great Vibes', cursive;
+    font-size:55px;
+    color:#8E6BBE;
+}
+
+.cancion p{
+    font-size:20px;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.cancion iframe{
+    width:100%;
+    max-width:500px;
+    border:none;
+    border-radius:12px;
+}
