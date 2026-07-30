@@ -29,7 +29,7 @@ body {
         linear-gradient(rgba(255,255,255,.65), rgba(239,228,246,.80)),
         url("imagenes/mi_foto.jpeg");
     background-size: cover; /* Volver a cover para que cubra */
-    background-position: center 17%; /* Centrado general */
+    background-position: center 10%; /* Centrado general */
 }
 
 .contenido {
