@@ -19,7 +19,7 @@ body {
 =========================== */
 
 .hero {
-    min-height: 100vh;
+    min-height: 110vh;
     padding-top: 80px;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ body {
         linear-gradient(rgba(255,255,255,.65), rgba(239,228,246,.80)),
         url("imagenes/mi_foto.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
 }
 
 .contenido {
