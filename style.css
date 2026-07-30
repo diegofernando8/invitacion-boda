@@ -28,8 +28,8 @@ body {
     background:
         linear-gradient(rgba(255,255,255,.65), rgba(239,228,246,.80)),
         url("imagenes/mi_foto.jpeg");
-    background-size: contain;
-    background-position: center;
+    background-size: cover; /* Volver a cover para que cubra */
+    background-position: center; /* Centrado general */
 }
 
 .contenido {
